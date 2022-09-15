@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo virsh destroy test
 sudo virsh undefine test --remove-all-storage --wipe-storage
+sudo rm /var/lib/libvirt/images/test.qcow2
 #echo "Choose a name for your VM:"
 #read name
 #sudo virt-install --name=$name \
